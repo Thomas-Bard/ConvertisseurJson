@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+
+
+body {
+    background-color: #2c3e50;
+}
+
+.container-title {
+    font-family: 'Ubuntu', 'sans-serif';
+    color:white;
+    border-style: solid;
+    border-color: #3498db;
+    border-radius: 7px;
+    width:100%;
+    text-align: center;
+}
+
+.main {
+    width:100%;
+}
+
+button {
+    border: solid #3498db;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #34495e;
+    color:white;
+    font-family: 'Ubuntu', 'sans-serif';
+    cursor:pointer;
+    transition: 0.5s;
+}
+
+#compile:hover {
+    background-color: #2ecc71;
+}
+#compile:active {
+    border-color: #bdc3c7;
+}
+
+.new-element:hover {
+    background-color:#e74c3c;
+}
+.new-element:active {
+    background-color:#c0392b;
+    border-color:#bdc3c7;
+}
+
+.delete:hover {
+    background-color:#e74c3c;
+}
+.delete:active {
+    background-color:#c0392b;
+    border-color:#bdc3c7;
+}
+
+#copy:hover {
+    background-color: #c1cc2e;
+}
+#copy:active {
+    background-color: #22a54a;
+}
+
+@keyframes element-spawn {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 120px;
+    }
+}
+
+.element {
+    animation-duration: 0.3s;
+    animation-name: element-spawn;
+    border:none;
+    border-bottom:  2px solid #3498db;
+    width:120px;
+    background-color: #2c3e50;
+    font-family: 'Ubuntu', 'sans-serif';
+    padding:4px;
+    color:white;
+    transition:0.5s;
+}
+
+.element-s {
+    animation-duration: 0.3s;
+    animation-name: element-spawn;
+    border:none;
+    border-bottom:  2px solid #3498db;
+    width:200px;
+    background-color: #2c3e50;
+    font-family: 'Ubuntu', 'sans-serif';
+    padding:4px;
+    color:white;
+    transition:0.5s;
+}
+
+.element:focus {
+    width:140px;
+    border-color:#1c6799;
+}
+
+.element-s:focus {
+    width:220px;
+    border-color:#1c6799;
+}
+
+#container-result {
+    color:white;
+    font-family: 'Ubuntu', 'sans-serif';
+    position: absolute;
+    top:50%;
+    left:50%;
+    font-size:25px;
+    border:none;
+    border-left:2px solid #3498db;
+    width:200px;
+    display: flex;
+}
+
+.container-buttons {
+    border:none;
+    border-bottom:2px solid #3498db;
+    width:fit-content;
+    text-align:center;
+    transition-duration: 0.4s;
+}
+
+.container-buttons:hover {
+    color:#797979;
+}
+
+.object-title {
+    font-family: 'Ubuntu', 'sans-serif';
+    color:white;
+}
+
+* {
+    user-select: none;
+}
+
+input, button, textarea, :focus {
+    outline: none;
+}
+
+#new-object:hover {
+    background-color:#e74c3c;
+}
+#new-object:active {
+    background-color:#c0392b;
+    border-color:#bdc3c7;
+}

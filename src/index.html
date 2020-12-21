@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Syntaxeur JSON</title>
+        <link rel="stylesheet" href="style.css"/>
+        <script src="index.js"></script>
+    </head>
+
+    <body>
+        <div class="container-title">
+            <h1 id = "title">Syntaxeur JSON</h1>
+        </div>
+
+        <br/>
+
+        <div class = "main">
+            <div id = "container-static-buttons">
+                <button id = "compile">Convertir en JSON</button>
+                <button id = "new-object">Nouvel objet</button>
+                <button id = "copy" hidden="">Copier dans le presse papier</button>
+            </div>
+            <br/>
+            <div class = "container-inputs-buttons" id = "objects-container">
+                <div class = "container-buttons" id = "container-buttons-0">
+                    <button class = "new-element" id = "new-element-0">Nouvel élément</button>
+                    <button class = "delete" id = "delete-0">Supprimer un élément</button>
+                    <h2 class = "object-title" id = "title-0">Objet numéro 0 (base)</h2>
+                </div>
+                <br/>
+                <div id = "object0" class = "container-inputs">
+                    <input class = "element" id = "key0-0" type="text" placeholder="Clé"/>
+                    <select class = "element-s" id="valtype0-0">
+                        <option class ="opt">Valeur brute</option>
+                        <option class = "opt">Tableau de valeur</option>
+                        <option class = "opt">Objet JSON</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div id = "container-result">
+                
+        </div>
+    </body>
+</html>
